@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,iBAAiB;EACf,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,KAAK",
+"sources": ["resumesj.scss"],
+"names": [],
+"file": "resumesj.css"
+}
