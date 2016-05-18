@@ -56,6 +56,12 @@
   background: linear-gradient(45deg, #00aeff 0%, #c2399a 76%, #ff147a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeff', endColorstr='#ff147a', GradientType=1 );
   padding: 40px; }
+  .resume-container .resume-container-have-picleft {
+    padding-left: 100px;
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    background-color: transparent; }
   .resume-container .resume-content {
     width: 100%;
     height: 100%;
