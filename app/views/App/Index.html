@@ -7,50 +7,76 @@
   {{template "nav.html" .}}
   <!--<div class="triangle-top"></div>
   <div class="triangle-bottom"></div>-->
-  <div class="resume-container">
-    <section id="introduction" style="display: none;">
-      <div class="resume-content">
-        <div class="row">
-          <div class="col-sm-12 col-xs-12 resume-content-header-text"><h1></h1></div>
-          <div class="col-md-12 resume-content-form">
-            <div class="col-md-12">
-              <img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.0-0/p206x206/11182338_1051007884926877_7294512220675026050_n.jpg?oh=ae984036a31d053262f4e5af809dc64b&oe=57E5C4F6" class="img-responsive circle">
-            </div>
-            <div class="col-md-12">
-              <h1 class="text-center">สิทธิพงศ์ จึงสกุล (เพชร)</h1>
-              <h1 class="text-center">ผมเป็น Programmer และ Designer</h1>
-              <h2 class="text-center">ผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designer</h2>
-            </div>
-            <div class="col-md-12 text-center" style="margin-top: 20px;">
-              <button type="button" name="button" class="btn btn-resume">ข้อมูลส่วนตัว</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="introduction" style="display: block;">
-      <div class="resume-content-left-paddingmore">
-        <div class="row">
-          <div class="col-sm-12 col-xs-12 resume-content-header-text"><h1></h1></div>
-          <div class="col-md-12 resume-content-form">
-            <div class="col-md-12">
-              <img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.0-0/p206x206/11182338_1051007884926877_7294512220675026050_n.jpg?oh=ae984036a31d053262f4e5af809dc64b&oe=57E5C4F6" class="img-responsive circle">
-            </div>
-            <div class="col-md-12">
-              <h1 class="text-center">สิทธิพงศ์ จึงสกุล (เพชร)</h1>
-              <h1 class="text-center">ผมเป็น Programmer และ Designer</h1>
-              <h2 class="text-center">ผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designer</h2>
-            </div>
-            <div class="col-md-12 text-center" style="margin-top: 20px;">
-              <button type="button" name="button" class="btn btn-resume">ข้อมูลส่วนตัว</button>
+  <section id="introduction" style="display: block;">
+    <div class="resume-container">
+        <div class="resume-content">
+          <div class="row">
+            <div class="col-sm-12 col-xs-12 resume-content-header-text"><h1></h1></div>
+            <div class="col-md-12 resume-content-form">
+              <div class="col-md-12">
+                <img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.0-0/p206x206/11182338_1051007884926877_7294512220675026050_n.jpg?oh=ae984036a31d053262f4e5af809dc64b&oe=57E5C4F6" class="img-responsive circle">
+              </div>
+              <div class="col-md-12">
+                <h1 class="text-center">สิทธิพงศ์ จึงสกุล (เพชร)</h1>
+                <h1 class="text-center">ผมเป็น Programmer และ Designer</h1>
+                <h2 class="text-center">ผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designer</h2>
+              </div>
+              <div class="col-md-12 text-center" style="margin-top: 20px;">
+                <button type="button" name="button" class="btn btn-resume">ประวัติ</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
+    </div>
+  </section>
+  <section id="info" style="display: none;">
+    <div class="resume-container" style="padding-left: 100px;">
+        <div class="resume-content">
+          <div class="row">
+            <div class="col-sm-12 col-xs-12 resume-content-header-text"><h1>ประวัติ</h1></div>
+            <div class="col-md-12 resume-content-form">
+              <div class="col-md-12">
+                <h1 class="text-center">สิทธิพงศ์ จึงสกุล (เพชร)</h1>
+                <h1 class="text-center">ผมเป็น Programmer และ Designer</h1>
+                <h2 class="text-center">ผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designer</h2>
+              </div>
+              <div class="col-md-12 text-center" style="margin-top: 20px;">
+                <button type="button" name="button" class="btn btn-resume">ประวัติ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
 </div>
 <script>
+$(document).ready(function(){
+    function closeMenu(){
+      $('.cd-menu-icon').toggleClass('is-clicked');
+  		$('.cd-header').toggleClass('menu-is-open');
+
+  		//in firefox transitions break when parent overflow is changed, so we need to wait for the end of the trasition to give the body an overflow hidden
+  		if( $('.cd-primary-nav').hasClass('is-visible') ) {
+  			$('.cd-primary-nav').removeClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
+  				$('body').removeClass('overflow-hidden');
+  			});
+  		} else {
+  			$('.cd-primary-nav').addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
+  				$('body').addClass('overflow-hidden');
+  			});
+  		}
+    }
+    $(".intro").click(function(){
+        closeMenu();
+        $("#info").hide();
+        $("#introduction").show();
+    });
+    $(".info").click(function(){
+        closeMenu();
+        $("#introduction").hide();
+        $("#info").show();
+    });
+});
 $(window).on('scroll',
 	{
 	    previousTop: 0
