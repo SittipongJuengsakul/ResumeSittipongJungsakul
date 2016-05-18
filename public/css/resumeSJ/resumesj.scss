@@ -46,3 +46,12 @@
     box-shadow: 2px 1px 36px -4px rgba(122,122,122,0.94);
   }
 }
+@media only screen and (max-width: 768px) {
+  .resume-container{
+    padding: 15px;
+    .resume-content{
+      margin-top: 50px;
+      margin-bottom: 15px;
+    }
+  }
+}
