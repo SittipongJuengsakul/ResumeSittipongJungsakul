@@ -19,7 +19,7 @@
               <div class="col-md-12">
                 <h1 class="text-center">สิทธิพงศ์ จึงสกุล (เพชร)</h1>
                 <h1 class="text-center">ผมเป็น Programmer และ Designer</h1>
-                <h2 class="text-center">ผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designerผมเป็น Programmer และ Designer</h2>
+                <h2 class="text-center">ผมชอบที่จะศึกษาเทคโนโลยีใหม่ๆ อยู่เสมอ เพื่อพัฒนาความสามารถของตนเอง การเขียนโปรแกรมสำหรับผมคือความท้าทาย และความตื่นเต้น เพราะผมจะได้เรียนรู้หลายสิ่งหลายอย่างจากงานเหล่านั้น ทุกทักษะ ความรู้ และความสามารถของผมจะเป็นประโยชน์กับองค์กรของคุณอย่างแน่นอน</h2>
               </div>
               <div class="col-md-12 text-center" style="margin-top: 20px;">
                 <button type="button" name="button" class="btn btn-resume">ประวัติ</button>
@@ -31,8 +31,8 @@
   </section>
   <section id="info" style="display: none;">
     <div class="resume-container">
-      <img src="/public/img/Man-in-Trenchcoat.png" class="img-responsive" style="position: absolute;bottom: 0;">
-      <div class="resume-container-have-picleft">
+      <img src="/public/img/Man-in-Trenchcoat.png" class="img-responsive" style="position: absolute;bottom: 0;height: 600px;">
+      <div class="resume-container-have-picleft" style="padding-left: 15px;">
         <div class="resume-content">
           <div class="row">
             <div class="col-sm-12 col-xs-12 resume-content-header-text"><h1>ประวัติ</h1></div>
@@ -49,19 +49,16 @@
       </div>
     </div>
   </section>
-  <section id="info" style="display: block;">
+  <section id="edu" style="display: block;">
     <div class="resume-container">
-      <img src="http://www.immediateentourage.com/ie/wp-content/uploads/2013/04/Man-in-Trenchcoat.png" class="img-responsive" style="position: absolute;top: 0;right: 0;">
-      <div class="resume-container-have-picleft">
+      <img src="http://orig05.deviantart.net/7327/f/2014/050/3/4/yoona_png_by_yoonhaeseokyu17_by_yoonhaeseokyu17-d774js2.png" class="img-responsive" style="height: 800px;position: absolute;top: 5;right: 0;">
+      <div class="resume-container-have-picleft" style="padding-right: 15px;padding-left: 15px;">
         <div class="resume-content">
           <div class="row">
             <div class="col-sm-12 col-xs-12 resume-content-header-text"><h1>ประวัติการศึกษา</h1></div>
             <div class="col-md-12 resume-content-form">
-              <div class="col-md-6">
-                <h1>ชื่อ: นายสิทธิพงศ์ จึงสกุล</h1>
-                <h1>ชื่อเล่น : เพชร</h1>
-                <h1>เบอร์โทรศัพท์ : 083-9915593</h1>
-                <h1>อีเมล : sittipongwork@gmail.com</h1>
+              <div class="col-md-8">
+                <h1>สาขาวิศวกรรมซอฟต์แวร์ คณะวิทยาการสารสนเทศ มหาวิทยาลัยบูรพา</h1>
               </div>
             </div>
           </div>
@@ -89,12 +86,20 @@ $(document).ready(function(){
     $(".intro").click(function(){
         closeMenu();
         $("#info").hide();
+        $("#edu").hide();
         $("#introduction").show();
     });
     $(".info").click(function(){
         closeMenu();
+        $("#edu").hide();
         $("#introduction").hide();
         $("#info").show();
+    });
+    $(".edu").click(function(){
+        closeMenu();
+        $("#info").hide();
+        $("#introduction").hide();
+        $("#edu").show();
     });
 });
 $(window).on('scroll',
