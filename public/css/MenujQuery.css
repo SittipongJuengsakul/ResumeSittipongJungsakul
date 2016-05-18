@@ -165,8 +165,10 @@ html, body {
   height: 100%;
   width: 50px;
   background-color: #03263d;
+  cursor: pointer;
 }
 .cd-primary-nav-trigger .cd-menu-text {
+  cursor: pointer;
   color: black;
   text-transform: uppercase;
   font-weight: 700;
@@ -174,6 +176,7 @@ html, body {
   display: none;
 }
 .cd-primary-nav-trigger .cd-menu-icon {
+  cursor: pointer;
   /* this span is the central line of the menu icon */
   display: inline-block;
   position: absolute;
