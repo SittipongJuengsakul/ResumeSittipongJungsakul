@@ -44,6 +44,10 @@
     -webkit-box-shadow: 2px 1px 36px -4px rgba(122, 122, 122, 0.94);
     -moz-box-shadow: 2px 1px 36px -4px rgba(122, 122, 122, 0.94);
     box-shadow: 2px 1px 36px -4px rgba(122, 122, 122, 0.94); }
+    .resume-container .resume-content .resume-content-header-text {
+      text-align: center; }
+      .resume-container .resume-content .resume-content-header-text h1 {
+        font-size: 20px; }
 
 @media only screen and (max-width: 768px) {
   .resume-container {
